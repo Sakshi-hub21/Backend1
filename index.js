@@ -193,6 +193,6 @@ app.get("/dates", (req, res) => {
   );
 });
 
-app.listen(3306, () => {
+app.listen(4001, () => {
   console.log("Server running on port 5000");
 });
