@@ -24,7 +24,9 @@ connection.connect((err) => {
   }
   console.log("Connected to MySQL database");
 });
-
+app.get('/',(req,res)=>{
+  res.send("working");
+});
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
   console.log("Received username:", username);
