@@ -26,6 +26,7 @@ connection.connect((err) => {
 });
 app.get('/',(req,res)=>{
   res.send("working");
+  console.log("server om")
 });
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
